@@ -18,8 +18,11 @@
 
             app.UseHttpsRedirection();
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
             app.UseEndpoints(endpoints => {
-                endpoints.MapGet("/", () => "Hello world!");
+                endpoints.MapGet("/hello", () => "Hello world!");
             });
         }
     }
