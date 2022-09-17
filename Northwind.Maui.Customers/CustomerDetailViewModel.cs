@@ -67,7 +67,7 @@ public class CustomerDetailViewModel : INotifyPropertyChanged
         get => country;
         set
         {
-            city = value;
+            country = value;
             NotifyPropertyChanged();
             NotifyPropertyChanged(nameof(Location));
         }

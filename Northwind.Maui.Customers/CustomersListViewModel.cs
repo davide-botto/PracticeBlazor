@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 
 namespace Northwind.Maui.Customers;
 
-public class CustomerListViewModel : ObservableCollection<CustomerDetailViewModel>
+public class CustomersListViewModel : ObservableCollection<CustomerDetailViewModel>
 {
     public void AddSampleData(bool clearList = true)
     {
